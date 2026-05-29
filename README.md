@@ -1,6 +1,3 @@
-
-Sistema de Gerenciamento de Biblioteca com TADs, Lista, Fila e Árvore  Binária de Busca
-
 # Sistema de Gerenciamento de Biblioteca 📚
 
 Trabalho prático desenvolvido para a disciplina de **Estrutura de Dados** do curso de Ciência da Computação da **Universidade Estadual do Ceará (UECE)**.
