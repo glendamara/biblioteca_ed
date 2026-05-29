@@ -2,11 +2,6 @@
 
 Trabalho prático desenvolvido para a disciplina de **Estrutura de Dados** do curso de Ciência da Computação da **Universidade Estadual do Ceará (UECE)**.
 
-## 👥 Equipe
-* **Integrante 1**: [Seu Nome Completo] - Matrícula: [XXXXXXX]
-* **Integrante 2**: [Nome do Integrante 2] - Matrícula: [XXXXXXX]
-* **Integrante 3**: [Nome do Integrante 3] - Matrícula: [XXXXXXX]
-
 ## 📝 Descrição do Sistema
 Este sistema consiste em uma aplicação em modo texto (terminal) voltada para o controle e gerenciamento do acervo de uma biblioteca. O grande diferencial do projeto é a implementação manual e integrada de estruturas de dados lineares e não lineares para garantir eficiência nas operações, sem a utilização de bibliotecas prontas de armazenamento dinâmico.
 
