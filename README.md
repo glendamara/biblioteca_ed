@@ -1,30 +1,108 @@
-# Sistema de Gerenciamento de Biblioteca 📚
+# Sistema de Gerenciamento de Biblioteca
 
-Trabalho prático desenvolvido para a disciplina de **Estrutura de Dados** do curso de Ciência da Computação da **Universidade Estadual do Ceará (UECE)**.
+## Equipe
+- Integrante 1: Glenda Mara da Silva Pereira
+- Integrante 2: Olga Pedrosa de Sousa
+- Integrante 3: Marília Milfont Rangel Lima
 
-## 📝 Descrição do Sistema
-Este sistema consiste em uma aplicação em modo texto (terminal) voltada para o controle e gerenciamento do acervo de uma biblioteca. O grande diferencial do projeto é a implementação manual e integrada de estruturas de dados lineares e não lineares para garantir eficiência nas operações, sem a utilização de bibliotecas prontas de armazenamento dinâmico.
-
-As principais estruturas utilizadas são:
-* **Árvore Binária de Busca (ABB)**: Estrutura principal, responsável por armazenar, organizar e buscar os livros de forma rápida utilizando o `codigo` único como chave.
-* **Fila Encadeada (FIFO)**: Utilizada para gerenciar a lista de espera e reservas de usuários quando um livro solicitado não possui exemplares disponíveis para empréstimo imediato.
-* **Lista Encadeada Simples**: Destinada a registrar e manter de forma sequencial o histórico de todos os empréstimos bem-sucedidos realizados no sistema.
-
----
-
-## 🛠️ Estrutura de Arquivos do Projeto
-O projeto está organizado de forma modular nos seguintes arquivos:
-* `main.c`: Contém o menu interativo e a integração lógica entre as estruturas.
-* `livro.h` / `livro.c`: Definição do TAD Livro e suas operações de manipulação.
-* `arvore.h` / `arvore.c`: Implementação da Árvore Binária de Busca e percursos.
-* `fila.h` / `fila.c`: Implementação da fila dinâmica para controle de reservas.
-* `lista.h` / `lista.c`: Implementação da lista encadeada para histórico de empréstimos.
+## Disciplina
+Estrutura de Dados — UECE  
+Professor: Bonfim Amaro Junior
 
 ---
 
-## 🚀 Como Compilar e Executar
+## Descrição do Sistema
 
-Para compilar o projeto de forma correta, garantindo a ligação de todos os módulos, utilize o compilador `gcc` através do terminal com o comando abaixo:
+Sistema desenvolvido em linguagem C para gerenciamento de acervo de biblioteca,
+utilizando:
 
-```bash
-gcc main.c livro.c arvore.c fila.c lista.c -o biblioteca
+- **TAD Livro** — encapsula os dados e operações de cada obra.
+- **Árvore Binária de Busca (ABB)** — armazena e organiza os livros pelo código identificador.
+- **Fila (FIFO)** — gerencia as reservas de livros indisponíveis.
+- **Lista Encadeada** — mantém o histórico de empréstimos realizados.
+
+---
+
+## Estrutura de Arquivos
+
+```
+trabalho_biblioteca/
+├── main.c      → Menu principal e integração das estruturas
+├── livro.h     → Definição do TAD Livro
+├── livro.c     → Implementação do TAD Livro
+├── arvore.h    → Definição da Árvore Binária de Busca
+├── arvore.c    → Implementação da ABB
+├── fila.h      → Definição da Fila de Reservas
+├── fila.c      → Implementação da Fila
+├── lista.h     → Definição da Lista de Histórico
+├── lista.c     → Implementação da Lista
+└── README.md
+```
+
+---
+
+## Exemplos de Uso
+
+### Cadastrar livro
+```
+Opcao: 1
+Código      : 10
+Título      : Introdução a Algoritmos
+Autor       : Cormen
+Ano         : 2009
+Qtd. total  : 3
+→ Livro 'Introdução a Algoritmos' cadastrado com sucesso!
+```
+
+### Buscar livro
+```
+Opcao: 2
+Código: 10
+→ exibe os dados do livro
+```
+
+### Realizar empréstimo
+```
+Opcao: 6
+Nome do usuário : João Silva
+Código do livro : 10
+→ Empréstimo realizado com sucesso!
+```
+
+### Reservar livro indisponível
+```
+Opcao: 6
+Nome do usuário : Maria Costa
+Código do livro : 10   ← sem exemplares
+→ Deseja entrar na fila de reservas? (s/n): s
+→ Reserva adicionada à fila.
+```
+
+### Devolver livro
+```
+Opcao: 7
+Código do livro: 10
+→ Livro devolvido com sucesso!
+→ Atenção: há usuários na fila de reserva para este livro.
+```
+
+---
+
+## Funcionalidades Implementadas
+
+| # | Funcionalidade                         | Status |
+|---|----------------------------------------|--------|
+| 1 | Cadastrar novo livro                   | ✓      |
+| 2 | Buscar livro por código                | ✓      |
+| 3 | Listar em ordem crescente              | ✓      |
+| 4 | Listar em pré-ordem                    | ✓      |
+| 5 | Listar em pós-ordem                    | ✓      |
+| 6 | Realizar empréstimo                    | ✓      |
+| 7 | Devolver livro                         | ✓      |
+| 8 | Exibir fila de reservas                | ✓      |
+| 9 | Exibir histórico de empréstimos        | ✓      |
+|10 | Exibir quantidade de livros cadastrados| ✓      |
+|11 | Exibir altura da árvore                | ✓      |
+|   | Atendimento automático da fila na devolução | ✓ (extra) |
+
+---
