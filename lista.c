@@ -2,9 +2,7 @@
 #include <stdlib.h>
 #include "lista.h"
 
-/* =========================================================
- * Lista Encadeada de Histórico de Empréstimos - Implementação
- * ========================================================= */
+/* Lista Encadeada de Histórico de Empréstimos - Implementação */
 
 Lista *criarLista(void)
 {

@@ -3,9 +3,7 @@
 
 #include "livro.h"
 
-/* =========================================================
- * Árvore Binária de Busca (ABB) de Livros - Definições
- * ========================================================= */
+/* Árvore Binária de Busca (ABB) de Livros - Definições */
 
 typedef struct NoArvore {
     Livro           *livro;

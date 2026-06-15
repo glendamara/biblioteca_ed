@@ -2,11 +2,9 @@
 #include <stdlib.h>
 #include "arvore.h"
 
-/* =========================================================
- * Árvore Binária de Busca (ABB) - Implementação
- * ========================================================= */
+/* Árvore Binária de Busca (ABB) - Implementação */
 
-/* ---------- funções auxiliares (estáticas / internas) ---------- */
+/* -- funções auxiliares (estáticas / internas) -- */
 
 static NoArvore *criarNo(Livro *livro)
 {
@@ -90,7 +88,7 @@ static int alturaRec(NoArvore *no)
     return 1 + (altEsq > altDir ? altEsq : altDir);
 }
 
-/* ---------- funções públicas ---------- */
+/* ----- funções públicas ---- */
 
 Arvore *criarArvore(void)
 {

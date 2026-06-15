@@ -1,9 +1,7 @@
 #ifndef FILA_H
 #define FILA_H
 
-/* =========================================================
- * Fila de Reservas - Definições (política FIFO)
- * ========================================================= */
+/* Fila de Reservas - Definições (política FIFO)*/
 
 typedef struct {
     char nomeUsuario[100];

@@ -1,9 +1,7 @@
 #ifndef LIVRO_H
 #define LIVRO_H
 
-/* =========================================================
- * TAD Livro - Definição da estrutura e declaração das funções
- * ========================================================= */
+/* TAD Livro - Definição da estrutura e declaração das funções*/
 
 typedef struct {
     int  codigo;

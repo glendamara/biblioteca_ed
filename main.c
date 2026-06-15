@@ -6,10 +6,8 @@
 #include "fila.h"
 #include "lista.h"
 
-/* =========================================================
- * Sistema de Gerenciamento de Biblioteca
- * Disciplina: Estrutura de Dados - UECE
- * ========================================================= */
+/* Sistema de Gerenciamento de Biblioteca
+ * Disciplina: Estrutura de Dados - UECE*/
 
 /* ---------- utilitários ---------- */
 

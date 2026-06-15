@@ -3,9 +3,7 @@
 #include <string.h>
 #include "livro.h"
 
-/* =========================================================
- * TAD Livro - Implementação das funções
- * ========================================================= */
+/* TAD Livro - Implementação das funções*/
 
 Livro *criarLivro(int codigo, char titulo[], char autor[],
                   int ano, int quantidadeTotal)

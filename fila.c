@@ -3,9 +3,7 @@
 #include <string.h>
 #include "fila.h"
 
-/* =========================================================
- * Fila de Reservas - Implementação (política FIFO)
- * ========================================================= */
+/* Fila de Reservas - Implementação (política FIFO) */
 
 Fila *criarFila(void)
 {

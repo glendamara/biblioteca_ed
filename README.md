@@ -13,8 +13,11 @@ Professor: Bonfim Amaro Junior
 
 ## Descrição do Sistema
 
-Sistema desenvolvido em linguagem C para gerenciamento de acervo de biblioteca,
-utilizando:
+Sistema desenvolvido em linguagem C para gerenciamento de acervo de biblioteca.
+O projeto foi inicialmente montado e testado no C Online, mas também pode ser
+compilado localmente no Windows ou diretamente no terminal integrado do VS Code.
+
+Utilizando:
 
 - **TAD Livro** — encapsula os dados e operações de cada obra.
 - **Árvore Binária de Busca (ABB)** — armazena e organiza os livros pelo código identificador.
@@ -38,6 +41,41 @@ trabalho_biblioteca/
 ├── lista.c     → Implementação da Lista
 └── README.md
 ```
+
+---
+
+## Como compilar e executar
+
+O projeto pode ser compilado localmente com o `gcc` ou diretamente no terminal integrado do VS Code.
+
+### No Windows / terminal local
+
+Na pasta do projeto, execute:
+
+```bash
+gcc -std=c11 -Wall -Wextra -pedantic main.c livro.c arvore.c fila.c lista.c -o biblioteca_ed.exe
+```
+
+Depois, rode o programa com:
+
+```bash
+./biblioteca_ed.exe
+```
+
+Se estiver usando PowerShell, o executável também pode ser aberto com:
+
+```powershell
+.\biblioteca_ed.exe
+```
+
+### No VS Code
+
+1. Abra a pasta `biblioteca_ed` no VS Code.
+2. Abra o terminal integrado em `Terminal > New Terminal`.
+3. Execute o mesmo comando de compilação mostrado acima.
+4. Depois, inicie o programa pelo terminal.
+
+Se o `gcc` não estiver instalado, será necessário instalar uma distribuição como MinGW-w64, GCC via WSL, ou outra toolchain C compatível com o seu ambiente.
 
 ---
 

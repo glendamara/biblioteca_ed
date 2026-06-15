@@ -1,9 +1,7 @@
 #ifndef LISTA_H
 #define LISTA_H
 
-/* =========================================================
- * Lista Encadeada de Histórico de Empréstimos - Definições
- * ========================================================= */
+/* Lista Encadeada de Histórico de Empréstimos - Definições*/
 
 typedef struct {
     char nomeUsuario[100];
